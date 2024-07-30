@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>FabCab</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../../assets/css/main.css" />
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="DatePickerX-master/dist/css/DatePickerX.css"> -->
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
+            <a href="../../../index.html" class="logo"><strong>TukTuk</strong> </a>
+            <nav id="nav">
+                <a href="../Traveller/find-a-ride.html"> <i class="fa fa-car" aria-hidden="true"></i> Find a Ride</a>
+                <a href="../Traveller/offerr-ride.html"> <i class="fa fa-plus-square" aria-hidden="true"></i> Offer a Ride</a>
+                <a href="login.html">Login</a>
+            </nav>
+            <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner2">
+        <div class="container-fluid">
+            <div class="inner">
+                <header>
+                    <h2>Lets Get Started</h2>
+                </header>
+                <br />
+                <div class="row">
+                    <div class="col-md-6" style="position: relative; left: 25%;">
+
+                        <!-- <form> -->
+
+                        <div>
+                            <input type="email" name="user-mail" id="user-mail" placeholder="Email" onblur="emailValidate(this);" />
+                            <p id="emailError" style="color: red"></p>
+                        </div>
+
+                        <div>
+                            <input type="text" name="user-name" id="user-name" placeholder="Name" onblur="nameValidate(this);"/>
+                            <p id="nameError" style="color: red"></p>
+                        </div>
+                        <div>
+                            <input type="text" name="user-mob" id="user-mob" onblur="numberValidate(this);" placeholder="Mobile"/>
+                            <p id="mobileError" style="color: red"></p>
+                        </div>
+                        <div>
+                            <input type="password" id="user-pass" placeholder="Password" onblur="passwordValidate(this);"/>
+                            <p id="passError1" style="color: red"></p>
+                        </div>
+                        <div>
+                            <input type="password" id="confirm-pass" placeholder="Confirm Password" onblur="matchPasswords(this);"/>
+                            <p id="passError2" style="color: red"></p>
+                        </div>
+                        <div>
+                            <input type="submit" name="Submit" id="submit" value="Sign Up" onclick="validateSignup(); register();" />
+                        </div>
+
+                        <!-- </form> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Three -->
+
+
+    <!-- Scripts -->
+    <script src="../../../assets/js/jquery.min.js"></script>
+    <script src="../../../assets/js/skel.min.js"></script>
+    <script src="../../../assets/js/util.js"></script>
+    <script src="login.js"></script>
+    <!-- <script src="DatePickerX-master/src/js/DatePickerX.js"></script> -->
+
+</body>
+
+</html>

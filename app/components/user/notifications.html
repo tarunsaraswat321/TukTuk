@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Notifications</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../assets/css/main.css" />
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../../../DatePickerX-master/dist/css/DatePickerX.css">
+</head>
+
+<body>
+   
+            </script>
+    <header id="header">
+        <div class="inner">
+            <a href="../../../index.html" class="logo"><strong>TUkTuk</strong> </a>
+
+            <nav id="nav">
+                <a href="../user/account.html"> <i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a>            <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+        </nav>
+            <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+        </div>
+    </header>
+    <section id="banner3" style="padding-top: 4em; padding-left: 1em;">
+        <div>
+            <span><strong>Your Notifications</strong></span>
+        </div>
+
+        <table class="table table-striped" >
+            <tbody id="notitable" style="font-size: .75em;">
+                <!-- <tr>
+                    <td><strong id="drivernameinnoti"> </strong> recently offered a ride on <strong id =dateinnoti ></strong> from <strong id="sourceinnoti"> </strong>to <strong id="destinnoti"></strong> at Rs. <strong id="priceinnoti"> </strong> </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </section>
+    <script src="../../../assets/js/jquery.min.js"></script>
+    <script src="../../../assets/js/skel.min.js"></script>
+    <script src="../../../assets/js/util.js"></script>
+    <script src="../../../assets/js/main.js"></script>
+    <script src="../Traveller/ride.js"></script>
+    <script src="../../../DatePickerX-master/src/js/DatePickerX.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/app/components/user/user.js"></script>
+    <script>
+            $(document).ready(function( ){
+                if(Cookies.get("name")==null){
+                alert("Oops! You are not logged in. ");
+                location.href="/app/components/Login/login.html"
+            }
+            $("#nameinnavbar").html(Cookies.get("name"))
+                getnotifications();
+        });
+    </script>
+</body>
+</html>
