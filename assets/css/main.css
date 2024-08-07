@@ -29,7 +29,7 @@
     display: block!important;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #dddddd;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
@@ -55,7 +55,7 @@
 .tabs-left > .nav-tabs {
   float: left;
   margin-right: 19px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #dddddd;
 }
 .tabs-left > .nav-tabs > li > a {
 	margin-right: -1px;
@@ -66,13 +66,13 @@
   
   .tabs-left > .nav-tabs > li > a:hover,
   .tabs-left > .nav-tabs > li > a:focus {
-	border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+	border-color: #11cf76 #dddddd #19abe9 #eeeeee;
   }
   
   .tabs-left > .nav-tabs .active > a,
   .tabs-left > .nav-tabs .active > a:hover,
   .tabs-left > .nav-tabs .active > a:focus {
-	border-color: #ddd transparent #ddd #ddd;
+	border-color: #dddddd transparent #dddddd #dddddd;
 	*border-right-color: #ffffff;
   }
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
@@ -2818,7 +2818,7 @@
 		}
 		#header .logo {
 			z-index: 9999;
-			color: gray;
+			color: rgb(128, 128, 128);
 			display: inline-block;
 			font-weight: 400;
 			height: inherit;
